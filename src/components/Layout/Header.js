@@ -1,7 +1,7 @@
 import React from "react";
 import mealsImage from "../../assets/meals.jpeg"
 
-import classes from "./Header.modules.css"
+import classes from "./Header.module.css"
 
 const Header = props => {
   return (
