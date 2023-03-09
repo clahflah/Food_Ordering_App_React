@@ -1,14 +1,19 @@
 import React from "react";
+import MealItemForm from "./MealItemForm";
 
 import classes from "./MealItem.module.css";
 
 const MealItem = (props) => {
+  const price = `$${props.price.toFixed(2)}`;
   return (
-    <div className={classes.name}>
-      <h3>{props.name}</h3>
-      <h2 className={classes.description}>{props.description}</h2>
-      <h2 className={classes.price}>{props.price}</h2>
-    </div>
+    <li className={classes.meal}>
+      <div>
+        <h3 className={classes.name}>{props.name}</h3>
+        <div className={classes.description}>{props.description}</div>
+        <div className={price}>{props.price}</div>
+      </div>
+      <div><MealItemForm /></div>
+    </li>
   );
 };
 
