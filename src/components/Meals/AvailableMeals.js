@@ -1,4 +1,5 @@
 import MealItem from "./MealItem";
+import Card from "../UI/Card";
 
 import classes from "./AvailableMeals.module.css";
 
@@ -41,7 +42,9 @@ const AvailableMeals = () => {
   ));
   return (
     <section className={classes.meals}>
-      <ul>{mealsList}</ul>
+      <Card>
+        <ul>{mealsList}</ul>
+      </Card>
     </section>
   );
 };
