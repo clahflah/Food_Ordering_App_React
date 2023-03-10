@@ -1,7 +1,17 @@
-import classes from './Modal.module.css'
+import classes from "./Modal.module.css";
 
-const Modal = props => {
-
+const Backdrop = (props) => {
+  return <div className={classes.backdrop}></div>;
 };
+
+const ModalOverlay = (props) => {
+  return (
+    <div className={classes.modal}>
+      <div className={classes.content}>{props.children}</div>
+    </div>
+  );
+};
+
+const Modal = (props) => {};
 
 export default Modal;
