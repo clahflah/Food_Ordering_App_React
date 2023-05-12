@@ -1,5 +1,5 @@
 import React from "react";
-import mealsImage from "../../assets/meals.jpeg"
+import breakfast from "../../assets/breakfast.jpg"
 import HeaderCartButton from './HeaderCartButton'
 
 import classes from "./Header.module.css"
@@ -8,11 +8,11 @@ const Header = props => {
   return (
   <React.Fragment>
     <header className={classes.header}>
-      <h1>MealzOnReact</h1>
+      <h1>Food 2 U</h1>
       <HeaderCartButton title="Cart" onClick={props.onShowCart}/>
     </header>
     <div className={classes['main-image']}>
-      <img src={mealsImage} alt="Tasty meals"/>
+      <img src={breakfast} alt="Tasty meals"/>
     </div>
   </React.Fragment>
   )
